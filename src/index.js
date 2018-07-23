@@ -1,5 +1,5 @@
-import VueAvatar from './components/VueAvatar.vue';
-import VueAvatarEditor from './components/VueAvatarEditor.vue';
+const VueAvatar = require('./components/VueAvatar.vue');
+const VueAvatarEditor = require('./components/VueAvatarEditor.vue');
 
 const library = { VueAvatar, VueAvatarEditor };
 
