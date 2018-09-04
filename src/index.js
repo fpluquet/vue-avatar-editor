@@ -1,5 +1,7 @@
-import VueAvatar from './components/VueAvatar.vue';
-import VueAvatarEditor from './components/VueAvatarEditor.vue';
-export default VueAvatarEditor;
+const VueAvatar = require('./components/VueAvatar.vue');
+const VueAvatarEditor = require('./components/VueAvatarEditor.vue');
 
-export { VueAvatar, VueAvatarEditor };
+const library = { VueAvatar, VueAvatarEditor };
+
+module.exports = library;
+module.exports.default = library;
