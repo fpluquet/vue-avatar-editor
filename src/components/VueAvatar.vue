@@ -15,6 +15,7 @@
     <input
       type="file"
       ref="input"
+      :accept="accept"
       @change="fileSelected"
       style="display:none;"
       />
@@ -46,6 +47,10 @@ export default {
             type: String,
             default: ''
         },
+        accept: {
+            type: String,
+            default: 'image/*'
+        }
         border: {
             type: Number,
             default: 25
