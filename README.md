@@ -95,6 +95,7 @@ let vm = new Vue({
 | style                  | Object   | Styles for the canvas element
 | scale                  | Number   | The scale of the image. You can use this to add your own resizing slider.
 | rotation               | Number   | The rotation in degrees of the image. You can use this to add your own rotating slider.
+| accept                 | String   | Types of accepted files (accept props in file input). Default `image/*`. Exemplary other value `image/png, image/jpeg`.
 
 ## Accessing the resulting image
 
