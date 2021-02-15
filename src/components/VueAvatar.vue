@@ -249,6 +249,8 @@ export default {
             eventSubject.addEventListener('mousemove', handleMouseMove);
             eventSubject.addEventListener('touchend', handleMouseUp);
             eventSubject.addEventListener('touchmove', handleMouseMove);
+
+            this.$emit('drag');
         },
         onDragEnd (e) {
             if (this.state.drag) {
@@ -303,8 +305,8 @@ export default {
             // imageObj.onload = () => this.handleImageReady(imageObj);
             imageObj.onload = () => {
                 let imageState = self.getInitialSize(imageObj.width, imageObj.height);
-                self.state.image.x = 0;
-                self.state.image.y = 0;
+                self.state.image.x = self.state.image.x || 0;
+                self.state.image.y = self.state.image.y || 0;
                 self.state.image.resource = imageObj;
                 self.state.image.width = imageState.width;
                 self.state.image.height = imageState.height;
